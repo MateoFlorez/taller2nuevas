@@ -89,8 +89,8 @@ while (opcion != 4):
 
     elif(opcion == 3):
         mejorTiempo = min(tiempos)
-        print(f'{mejorTiempo} Minutos')
-        print(f'El ciclista con mejor tiempo fue {ciclista.nombre}\nEdad: {ciclista.edad}\nPais: {ciclista.pais}\nEquipo: {ciclista.equipo}\nTiempo: {mejorTiempo} Minutos')
+        print(f'El mejor tiempor fue de {mejorTiempo} Minutos')
+        print(f'¡El ciclista con mejor tiempo fue {ciclista.nombre}!\nEdad: {ciclista.edad}\nPais: {ciclista.pais}\nEquipo: {ciclista.equipo}')
 
     elif(opcion == 4):
         print('Saliendo del programa...')
