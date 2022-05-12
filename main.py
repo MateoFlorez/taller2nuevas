@@ -79,11 +79,7 @@ while (opcion != 4):
         ciclista.equipo = ''
         ciclista.tiempo = 0
         
-        ciclistas.append(ciclista.nombre)
-        ciclistas.append(ciclista.edad)
-        ciclistas.append(ciclista.pais)
-        ciclistas.append(ciclista.equipo)
-        ciclistas.append(ciclista.tiempo)
+        ciclistas.append({"nombre":ciclista.nombre,"edad":ciclista.edad,"pais":ciclista.pais,"equipo":ciclista.equipo,"tiempo":ciclista.tiempo})
         tiempos.append(ciclista.tiempo)
         # Llenando la lista
         
@@ -94,6 +90,7 @@ while (opcion != 4):
     elif(opcion == 3):
         mejorTiempo = min(tiempos)
         print(f'{mejorTiempo} Minutos')
+        print(f'El ciclista con mejor tiempo fue {ciclista.nombre}\nEdad: {ciclista.edad}\nPais: {ciclista.pais}\nEquipo: {ciclista.equipo}\nTiempo: {mejorTiempo} Minutos')
 
     elif(opcion == 4):
         print('Saliendo del programa...')
