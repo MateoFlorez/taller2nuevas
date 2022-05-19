@@ -31,31 +31,26 @@ class Ciclista:
     # SETTERS
     @nombre.setter
     def nombre(self,nombre):
-        print('Digita el nombre: ')
-        self.__nombre = input(nombre)
+        self.__nombre = nombre
 
     @edad.setter
     def edad(self,edad):
         if(edad < 0):
             print('La edad no puede ser negativa.')
         else:
-            print('Digita el edad: ')
-            self.__edad = input(edad)
+            self.__edad = edad
 
     @pais.setter
     def pais(self,pais):
-        print('Digita el pais: ')
-        self.__pais = input(pais)
+        self.__pais = pais
 
     @equipo.setter
     def equipo(self,equipo):
-        print('Digita el equipo: ')
-        self.__equipo = input(equipo)
+        self.__equipo = equipo
 
     @tiempo.setter
     def tiempo(self,tiempo):
         if(tiempo < 0):
             print('El tiempo debe ser en minutos y no puede ser negativo.')
         else:
-            print('Digita el tiempo: ')
-            self.__tiempo = input(tiempo)
+            self.__tiempo = tiempo

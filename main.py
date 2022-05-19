@@ -73,11 +73,11 @@ while (opcion != 4):
     opcion = int(input('Digita una opción: '))
     if(opcion == 1):
 
-        ciclista.nombre = ''
-        ciclista.edad = 0
-        ciclista.pais = ''
-        ciclista.equipo = ''
-        ciclista.tiempo = 0
+        ciclista.nombre = input('Digita el nombre: ')
+        ciclista.edad = int(input(f'Digita la edad: '))
+        ciclista.pais = input('Digita el pais: ')
+        ciclista.equipo = input('Digita el equipo: ')
+        ciclista.tiempo = int(input('Digita el tiempo: '))
         
         ciclistas.append({"nombre":ciclista.nombre,"edad":ciclista.edad,"pais":ciclista.pais,"equipo":ciclista.equipo,"tiempo":ciclista.tiempo})
         tiempos.append(ciclista.tiempo)
